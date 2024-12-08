@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Brain } from 'lucide-react';
 
 const PsychologyHub = () => {
   const [email, setEmail] = useState('');
@@ -30,7 +29,7 @@ const PsychologyHub = () => {
 
           <div className="bg-gray-50 p-6 rounded-lg">
             <h3 className="font-bold text-xl text-black mb-3">What Actually Makes You Content</h3>
-            <p className="text-gray-700">insights into genuine satisfaction</p>
+            <p className="text-gray-700">Insights into genuine satisfaction</p>
           </div>
 
           <div className="bg-gray-50 p-6 rounded-lg">
@@ -42,7 +41,7 @@ const PsychologyHub = () => {
         {/* Newsletter */}
         <div className="bg-black text-white p-8 rounded-lg text-center">
           <h2 className="text-2xl font-bold mb-6">Get actionable psychology insights</h2>
-          
+
           {!submitted ? (
             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
               <input
@@ -62,7 +61,7 @@ const PsychologyHub = () => {
             </form>
           ) : (
             <div className="text-green-400 font-bold">
-              You're in! First insights coming soon.
+              You&apos;re in! First insights coming soon.
             </div>
           )}
         </div>
