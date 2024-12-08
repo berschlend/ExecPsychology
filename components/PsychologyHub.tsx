@@ -4,10 +4,11 @@ const PsychologyHub = () => {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // Typ für den Parameter 'e' definieren: React.FormEvent<HTMLFormElement>
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Verhindert das automatische Neuladen der Seite
     setSubmitted(true);
-    setEmail('');
+    setEmail(''); // E-Mail-Feld zurücksetzen
   };
 
   return (
